@@ -1,0 +1,251 @@
+.calculate {
+  padding: 72px 0 120px;
+  background-image: url('../img/calculate-form-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+
+  @media (max-width: $breakpoint992) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: $breakpoint768) {
+    padding: 30px 0;
+    background-position: center center;
+  }
+
+  .number-block {
+    margin-bottom: 30px;
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 40px;
+    }
+  }
+
+  // .calculate__inner
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @media (max-width: $breakpoint992) {
+      flex-direction: column;
+      row-gap: 40px;
+      align-items: flex-start;
+    }
+  }
+
+  // .calculate__texts
+
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    justify-content: flex-end;
+
+    @media (max-width: $breakpoint768) {
+      row-gap: 8px;
+    }
+  }
+
+  // .calculate__title
+
+  &__title {}
+
+  // .calculate__descr
+
+  &__descr {
+    color: #F5F5F5;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    opacity: 0.7;
+
+    @media (max-width: $breakpoint768) {
+      font-size: 16px;
+    }
+  }
+
+  // .calculate__form
+
+  &__form {
+    flex: 0 1 514px;
+    padding: 42px 40px 42px 30px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(10px);
+
+    @media (max-width: $breakpoint992) {
+      flex: 0 1 auto;
+      width: 100%;
+    }
+
+    @media (max-width: $breakpoint768) {
+      padding: 20px 15px;
+    }
+  }
+
+  // .calculate__form-inputs
+
+  &__form-inputs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+    width: 100%;
+    margin-bottom: 34px;
+  }
+
+  // .calculate__form-input
+
+  &__form-input {
+    padding: 18px 20px;
+    background-color: transparent;
+    border-radius: 7px;
+    border: 1px solid rgb(255, 255, 255, 0.2);
+    outline: 0;
+
+
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+
+    &::placeholder {
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: normal;
+      opacity: 0.2;
+    }
+  }
+
+  // .calculate__form-file
+
+  &__form-file {
+    margin-bottom: 28px;
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 34px;
+    }
+  }
+
+  // .calculate__form-file-input
+
+  &__form-file-input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    z-index: -100;
+  }
+
+  // .calculate__form-file-label
+
+  &__form-file-label {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    max-width: 300px;
+  }
+
+  // .calculate__form-text
+
+  &__form-text {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  // .calculate__form-file-btn
+
+  &__form-file-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    max-width: 152px;
+
+    white-space: nowrap;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+
+    cursor: pointer;
+  }
+
+  // .calculate__form-footer
+
+  &__form-footer {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 28px;
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 16px;
+    }
+  }
+
+  // .calculate__form-btn
+
+  &__form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 21px 25px;
+    border-radius: 7px;
+    background: linear-gradient(94deg, #6DDCFF -74.85%, #7F60F9 197.71%);
+
+    white-space: nowrap;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+
+    @media (max-width: $breakpoint768) {
+      width: 100%;
+    }
+  }
+
+  // .calculate__form-condition
+
+  &__form-condition {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.3;
+
+    a {
+      color: #FFF;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+.container {}
+
+.number-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0 15px 0;
+  border-top: 2px solid #fff;
+  opacity: 0.2;
+
+  // .number-block__sum
+
+  &__sum {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    color: #FFF;
+  }
+}
