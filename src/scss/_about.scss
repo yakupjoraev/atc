@@ -1,0 +1,160 @@
+.about {
+  margin-bottom: 158px;
+
+  @media (max-width: $breakpoint992) {
+    margin-bottom: 90px;
+  }
+
+  .number-block {
+    margin-bottom: 16px;
+  }
+
+  // .about__inner
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+
+    @media (max-width: $breakpoint992) {
+      flex-direction: column-reverse;
+      row-gap: 20px;
+    }
+
+  }
+
+  // .about__benifits
+
+  &__benifits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 14px;
+    row-gap: 14px;
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 10px;
+      row-gap: 10px;
+      width: 100%;
+    }
+  }
+
+  // .about__benifit
+
+  &__benifit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 400px;
+    max-width: 200px;
+
+    img {
+      width: 39px;
+      height: 39px;
+      object-fit: cover;
+    }
+
+    @media (max-width: $breakpoint992) {
+      max-width: 100%;
+    }
+
+    @media (max-width: $breakpoint768) {
+      min-height: 254px;
+    }
+  }
+
+  &__benifit--gradient {
+    background: var(--Linear, linear-gradient(98deg, #6DDCFF 0%, #7F60F9 100%));
+  }
+
+  &__benifit--dark {
+    background: rgb(26, 26, 26, 0.5);
+  }
+
+  &__benifit--blur {
+    border: 2px solid #2B2B2B;
+    backdrop-filter: blur(2px);
+
+    .about__benifit-descr {
+      color: #A1A1AA;
+    }
+
+    @media (max-width: $breakpoint768) {
+      grid-column: span 2;
+    }
+  }
+
+  // .about__benifit-info
+
+  &__benifit-info {}
+
+  // .about__benifit-sum
+
+  &__benifit-sum {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 66px;
+
+    @media (max-width: 360px) {
+      font-size: 30px;
+    }
+  }
+
+  // .about__benifit-descr
+
+  &__benifit-descr {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+
+    @media (max-width: 360px) {
+      font-size: 14px;
+    }
+  }
+
+  // .about__benifit--center
+
+  &__benifit--center {
+    justify-content: center;
+  }
+
+  // .about__info
+
+  &__info {
+    flex: 0 1 455px;
+
+    @media (max-width: $breakpoint992) {
+      flex: 0 1 auto;
+    }
+
+  }
+
+  // .about__title
+
+  &__title {
+    margin-bottom: 36px;
+  }
+
+  // .about__info-texts
+
+  &__info-texts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  // .about__info-text
+
+  &__info-text {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+  }
+}
