@@ -1,0 +1,132 @@
+.revievs {
+  margin-bottom: 164px;
+  overflow: hidden;
+
+  @media (max-width: $breakpoint992) {
+    margin-bottom: 88px;
+  }
+
+  .number-block {
+    margin-bottom: 68px;
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 34px;
+    }
+  }
+
+  // .revievs__inner
+
+  &__inner {}
+
+  // .revievs__label
+
+  &__label {
+    margin-bottom: 14px;
+    font-size: 16px;
+    color: #848484;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-transform: lowercase;
+  }
+
+  // .revievs__titles
+
+  &__titles {
+    margin-bottom: 38px;
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 24px;
+    }
+  }
+
+  // .revievs__title-linear
+
+  &__title-linear {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+  }
+
+  // .revievs__title-arrow
+
+  &__title-arrow {}
+
+  // .revievs__title-gradient
+
+  &__title-gradient {}
+
+  // .revievs__title
+
+  &__title {}
+
+  // .revievs__slider
+
+  &__slider {
+    overflow: visible;
+  }
+
+  // .revievs__slider-wrapper
+
+  &__slider-wrapper {
+    margin-bottom: 56px;
+  }
+
+  // .revievs__slider-slide
+
+  &__slider-slide {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #383838;
+
+    img {
+      max-width: 100%;
+      width: auto;
+      object-fit: cover;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  }
+
+  // .revievs__slider-text
+
+  &__slider-text {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.4;
+  }
+
+  // .revievs__slider-pagination
+
+  &__slider-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 60px;
+    background: rgba(217, 217, 217, 0.20);
+    backdrop-filter: blur(5px);
+
+    .swiper-pagination-bullet {
+      flex: 1 1 auto;
+      margin: 0 !important;
+      border-radius: 60px;
+      background: rgba(164, 164, 164, 0.20);
+      backdrop-filter: blur(5px);
+      height: 2px;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      flex: 1 1 auto;
+      margin: 0 7px;
+      border-radius: 60px;
+      background: linear-gradient(97deg, #6DDCFF -89.03%, #7F60F9 230.94%);
+      backdrop-filter: blur(5px);
+      opacity: 1;
+    }
+  }
+}
+
+.container {}
