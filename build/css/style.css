@@ -193,6 +193,114 @@ html {
   }
 }
 
+.searching {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 360px;
+}
+
+.searching .number-block {
+  margin-bottom: 42px;
+}
+
+.searching__title {
+  margin-bottom: 20px;
+}
+
+.searching__descr {
+  max-width: 495px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.5;
+}
+
+.searching__linies {
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.searching__line {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  counter-reset: item;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-width: 100%;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: normal;
+  color: #848484;
+  opacity: 0.3;
+}
+
+.searching__line:nth-child(2) {
+  margin: -30px 0;
+}
+
+.searching__line.main-title-shadow {
+  opacity: 1;
+  color: #0D0D0D;
+}
+
+.searching__line span {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  counter-increment: item;
+}
+
+.searching__line span:before {
+  content: counter(item);
+}
+
+.marquee {
+  -webkit-animation: scroll 100s linear infinite;
+          animation: scroll 100s linear infinite;
+}
+
+.reverse {
+  animation-direction: reverse;
+}
+
+@-webkit-keyframes scroll {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  to {
+    -webkit-transform: translateX(calc(-100% - 20px));
+            transform: translateX(calc(-100% - 20px));
+  }
+}
+
+@keyframes scroll {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  to {
+    -webkit-transform: translateX(calc(-100% - 20px));
+            transform: translateX(calc(-100% - 20px));
+  }
+}
+
 .services {
   margin-bottom: 132px;
 }
@@ -1114,6 +1222,18 @@ html {
 
   .main-title-shadow {
     font-size: 46px;
+  }
+
+  .searching {
+    padding-bottom: 300px;
+  }
+
+  .searching__line {
+    font-size: 80px;
+  }
+
+  .searching__line.main-title-shadow {
+    font-size: 80px;
   }
 
   .services__title {
