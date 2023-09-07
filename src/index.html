@@ -5,28 +5,72 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Index</title>
+  <title>Main page</title>
+  <link rel="stylesheet" href="./css/old-styles/bid.css">
+  <link rel="stylesheet" href="./css/old-styles/custom.css">
+  <link rel="stylesheet" href="./css/old-styles/help-center-custom.css">
+  <link rel="stylesheet" href="./css/old-styles/help-center-header.css">
+  <link rel="stylesheet" href="./css/old-styles/help-center.css">
+  <link rel="stylesheet" href="./css/old-styles/style.css">
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="main__body">
   <!-- Header -->
-  @@include('./html/_header.html')
+  <!-- @@include('./html/_header.html') -->
 
   <!-- Main Page -->
-  <main class="main">
-    @@include('./html/_searching.html')
-    @@include('./html/_services.html')
-    @@include('./html/_about.html')
-    @@include('./html/_map.html')
-    @@include('./html/_revievs.html')
-    @@include('./html/_licency.html')
-    @@include('./html/_calculate.html')
+  <main>
+    <div class="container">
+      <div class="pages">
+        <ul class="pages__list">
+          <li class="pages__item">
+            <a class="pages__link" href="main.html" target="_blank">
+              Главная
+            </a>
+          </li>
+
+          <li class="pages__item">
+            <a class="pages__link" href="about.html" target="_blank">
+              О компании
+            </a>
+          </li>
+
+
+
+        </ul>
+      </div>
+    </div>
+
+    <style>
+      .pages__list {
+        display: grid;
+        gap: 20px;
+        padding: 50px 0;
+      }
+
+      .pages__item {
+        display: grid;
+      }
+
+      .pages__link {
+        padding: 20px;
+        background-color: var(--red-color);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: var(--blue-color);
+      }
+
+      .pages__link:hover {
+        color: #6DDCFF;
+      }
+    </style>
   </main>
 
   <!-- Footer -->
-  @@include('./html/_footer.html')
+  <!-- @@include('./html/_footer.html') -->
 
 </body>
 

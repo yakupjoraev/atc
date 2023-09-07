@@ -1,0 +1,136 @@
+.steps {
+  padding-bottom: 130px;
+
+  .number-block {
+    margin-bottom: 40px;
+  }
+
+  // .steps__inner
+
+  &__inner {}
+
+  // .steps__title
+
+  &__title {
+    margin-bottom: 18px;
+  }
+
+  // .steps__lists
+
+  &__lists {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  // .steps__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 16px;
+    column-gap: 12px;
+
+    @media (max-width: $breakpoint992) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__list--first-text {
+    grid-template-columns: 270px 1fr 1fr;
+
+    @media (max-width: $breakpoint992) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .steps__item
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    border-radius: 10px;
+
+    @media (max-width: $breakpoint992) {
+      height: 160px;
+    }
+  }
+
+  &__item--dark {
+    border: 2px solid #2B2B2B;
+    background-color: transparent;
+  }
+
+  &__item--grey {
+    border: 2px solid #2B2B2B;
+    background: rgb(43, 43, 43, 0.3);
+  }
+
+  &__item--gradient {
+    background: var(--Linear, linear-gradient(98deg, #6DDCFF 0%, #7F60F9 100%));
+  }
+
+  &__item--descr {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+  }
+
+  // .steps__item-num
+
+  &__item-num {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+
+    @media (max-width: $breakpoint992) {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      svg {
+        max-width: 130px;
+      }
+    }
+  }
+
+  // .steps__item-texts
+
+  &__item-texts {
+    margin-top: auto;
+    padding: 25px;
+
+    @media (max-width: $breakpoint992) {
+      padding: 20px;
+    }
+  }
+
+  // .steps__item-label
+
+  &__item-label {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: normal;
+    color: #FFF;
+
+    @media (max-width: $breakpoint992) {
+      font-size: 20px;
+      max-width: 200px;
+    }
+  }
+
+  // .steps__item-text
+
+  &__item-text {
+    color: #FFF;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 16px;
+    opacity: 0.6;
+  }
+}

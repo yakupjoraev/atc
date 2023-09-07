@@ -1,1 +1,242 @@
+// Navbar
+.header {}
+
+.nav {
+  position: relative;
+
+  z-index: 100;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 16px 0 30px;
+  margin-top: 30px;
+
+  border-radius: 60px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  a {
+    color: white;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  // .menu__item
+  &__item {
+    margin-left: 50px;
+
+    @media (max-width: $breakpoint1450) {
+      margin-left: 25px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      margin-left: 0;
+    }
+  }
+
+  &__item--phone {
+    margin-left: auto;
+
+    @media (max-width: $breakpoint1450) {
+      margin-left: auto;
+    }
+
+    @media (max-width: $breakpoint992) {
+      margin-left: 0;
+    }
+  }
+
+  // .menu__item-link
+  &__item-link {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: #6DDCFF;
+    }
+  }
+}
+
+.menu__item-link--phone {
+  margin-left: auto;
+
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+
+  @media (max-width: $breakpoint1450) {
+    font-size: 16px;
+  }
+}
+
+.menu__item-link--mail {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+
+  @media (max-width: $breakpoint1450) {
+    font-size: 16px;
+  }
+}
+
+.menu__item-link--btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 60px;
+  border: 1px solid var(--gradient-01, #6DDCFF);
+  color: #FFF;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: var(--second-font);
+  font-size: 16px;
+
+  @media (max-width: $breakpoint1450) {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+// Burger menu styles
+@media screen and (max-width: $burgerBreakpoint) {
+
+
+
+  .navbar {
+    justify-content: space-between;
+    margin-top: 0;
+    padding: 0;
+
+    background: transparent;
+    backdrop-filter: blur(0);
+  }
+
+
+  .logo {
+    img {
+      width: 80px;
+      height: 48px;
+    }
+  }
+
+  // .menu
+  .menu {
+    position: fixed;
+    background: #131418;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+
+    &.active {
+      display: flex;
+      left: -15px;
+      top: 0;
+      height: 100vh;
+      width: 100vw;
+      flex-direction: column;
+      pointer-events: all;
+      justify-content: center;
+      align-items: center;
+      z-index: 22;
+      animation: fade 0.1s linear;
+    }
+  }
+
+  // .burger
+  .burger {
+    display: block;
+    position: relative;
+    height: 20px;
+    width: 30px;
+    z-index: 102;
+    cursor: pointer;
+
+    &.active-burger {
+      &:before {
+        background: $burgerActiveColor;
+        transform: rotate(45deg);
+        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+        top: 8px;
+      }
+
+      &:after {
+        background: $burgerActiveColor;
+        transform: rotate(-45deg);
+        bottom: 10px;
+        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+      }
+
+      & span {
+        transform: scale(0);
+      }
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background: $burgerActiveColor;
+      transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    }
+
+    &:before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    span {
+      position: absolute;
+      top: 9px;
+      right: 0;
+      width: 100%;
+      background: $burgerActiveColor;
+      height: 2px;
+      transform: scale(1);
+      transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    }
+  }
+
+  // .menu__item
+  .menu__item {
+    margin-top: 15px;
+  }
+
+  // .menu__link
+  .menu__item-link {
+    color: white;
+  }
+}
+
 // Header

@@ -120,7 +120,7 @@
 
     .swiper-pagination-bullet-active {
       flex: 1 1 auto;
-      margin: 0 7px;
+      margin: 0 7px !important;
       border-radius: 60px;
       background: linear-gradient(97deg, #6DDCFF -89.03%, #7F60F9 230.94%);
       backdrop-filter: blur(5px);
