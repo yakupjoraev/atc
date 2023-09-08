@@ -1454,6 +1454,11 @@ html {
   color: #FFF;
 }
 
+textarea.calculate__form-input {
+  height: 110px;
+  resize: none;
+}
+
 .about-second__inner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1475,6 +1480,160 @@ html {
   border-radius: 10px;
   max-width: 100%;
   width: 100%;
+}
+
+.cantacts__top {
+  margin-bottom: 20px;
+}
+
+.cantacts__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  margin-bottom: 50px;
+  padding: 20px 0 80px;
+  border-top: 1px solid rgba(217, 217, 217, 0.1);
+  border-bottom: 1px solid rgba(217, 217, 217, 0.1);
+}
+
+.cantacts__infos {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 446px;
+          flex: 0 1 446px;
+}
+
+.cantacts__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 28px;
+  padding-bottom: 36px;
+  margin-bottom: 44px;
+  border-bottom: 1px solid rgba(217, 217, 217, 0.1);
+}
+
+.cantacts__info-link {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+.cantacts__info-link:hover {
+  color: #6DDCFF;
+}
+
+.cantacts__form .calculate__form-input::-webkit-input-placeholder {
+  opacity: 0.6;
+}
+
+.cantacts__form .calculate__form-input::-moz-placeholder {
+  opacity: 0.6;
+}
+
+.cantacts__form .calculate__form-input:-ms-input-placeholder {
+  opacity: 0.6;
+}
+
+.cantacts__form .calculate__form-input::-ms-input-placeholder {
+  opacity: 0.6;
+}
+
+.cantacts__form .calculate__form-input::placeholder {
+  opacity: 0.6;
+}
+
+.cantacts__info-title {
+  margin-bottom: 24px;
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.cantacts__info-descr {
+  max-width: 310px;
+  margin-bottom: 24px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.5;
+}
+
+.cantacts__map {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 680px;
+          flex: 0 1 680px;
+}
+
+.cantacts__map-top {
+  margin-bottom: 20px;
+}
+
+.cantacts__map-label {
+  margin-bottom: 10px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.3;
+}
+
+.cantacts__map-city {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.cantacts__map-map img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.cantacts__bottom-title {
+  margin-bottom: 30px;
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.cantacts__bottom-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
+  row-gap: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.cantacts__bottom-item {
+  max-width: 310px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.5;
 }
 
 .footer {
@@ -1898,6 +2057,42 @@ html {
     grid-column: span 1;
   }
 
+  .cantacts__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 50px;
+    padding: 0 0 60px 0;
+    border-top: 0;
+  }
+
+  .cantacts__infos {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+
+  .cantacts__info {
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+  }
+
+  .cantacts__info-title {
+    margin-bottom: 16px;
+    font-size: 30px;
+  }
+
+  .cantacts__map {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+
+  .cantacts__bottom-title {
+    font-size: 30px;
+  }
+
   .footer {
     padding: 60px 0;
   }
@@ -2186,6 +2381,10 @@ html {
 
   .calculate__form-btn {
     width: 100%;
+  }
+
+  .cantacts__bottom-list {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
