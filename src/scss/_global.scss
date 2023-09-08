@@ -38,6 +38,35 @@ html {
   min-height: 100vh;
 }
 
+.breadcfrumbs {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  margin-bottom: 24px;
+  white-space: nowrap;
+
+
+  // .breadcfrumbs__item
+
+  &__item {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+  }
+
+  // .breadcfrumbs__link
+
+  &__link {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+
 .main__body {
   display: flex;
   flex-direction: column;

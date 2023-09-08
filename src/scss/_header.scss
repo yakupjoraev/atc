@@ -239,4 +239,16 @@
   }
 }
 
-// Header
+.header--second {
+
+  .navbar {
+    position: static;
+    margin-bottom: 180px;
+    margin-top: 40px;
+
+    @media (max-width: $breakpoint992) {
+      margin-bottom: 90px;
+      margin-top: 0;
+    }
+  }
+}
