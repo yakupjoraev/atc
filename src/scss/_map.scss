@@ -13,6 +13,7 @@
     background: var(--Linear, linear-gradient(98deg, #6DDCFF 0%, #7F60F9 100%));
     opacity: 0.3;
     filter: blur(105px);
+    z-index: -1;
 
     @media (max-width: $breakpoint768) {
       content: none;

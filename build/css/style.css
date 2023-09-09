@@ -596,7 +596,25 @@ html {
 }
 
 .steps {
+  position: relative;
   padding-bottom: 130px;
+}
+
+.steps::before {
+  content: "";
+  position: absolute;
+  right: -24%;
+  top: 0;
+  width: 817px;
+  height: 1074px;
+  -webkit-transform: rotate(-112deg);
+      -ms-transform: rotate(-112deg);
+          transform: rotate(-112deg);
+  background: var(--Linear, linear-gradient(98deg, #6DDCFF 0%, #7F60F9 100%));
+  opacity: 0.2;
+  -webkit-filter: blur(105px);
+          filter: blur(105px);
+  z-index: -1;
 }
 
 .steps .number-block {
@@ -808,7 +826,42 @@ html {
 }
 
 .services {
+  position: relative;
   margin-bottom: 132px;
+}
+
+.services::before {
+  content: "";
+  position: absolute;
+  left: -40%;
+  bottom: 0;
+  width: 820px;
+  height: 1074px;
+  -webkit-transform: rotate(-112deg);
+      -ms-transform: rotate(-112deg);
+          transform: rotate(-112deg);
+  background: var(--Linear, linear-gradient(98deg, #6DDCFF 0%, #7F60F9 100%));
+  opacity: 0.2;
+  -webkit-filter: blur(105px);
+          filter: blur(105px);
+  z-index: -1;
+}
+
+.services::after {
+  content: "";
+  position: absolute;
+  right: -40%;
+  top: 0;
+  width: 820px;
+  height: 1074px;
+  -webkit-transform: rotate(-112deg);
+      -ms-transform: rotate(-112deg);
+          transform: rotate(-112deg);
+  background: var(--Linear, linear-gradient(98deg, #6DDCFF 0%, #7F60F9 100%));
+  opacity: 0.2;
+  -webkit-filter: blur(105px);
+          filter: blur(105px);
+  z-index: -1;
 }
 
 .services .number-block {
@@ -1094,6 +1147,7 @@ html {
   opacity: 0.3;
   -webkit-filter: blur(105px);
           filter: blur(105px);
+  z-index: -1;
 }
 
 .map .number-block {
@@ -1587,6 +1641,10 @@ textarea.calculate__form-input {
   border-radius: 10px;
   max-width: 100%;
   width: 100%;
+}
+
+.cantacts {
+  margin-bottom: 60px;
 }
 
 .cantacts__top {
@@ -2355,7 +2413,6 @@ textarea.calculate__form-input {
 .footer {
   position: relative;
   padding: 70px 0 64px;
-  overflow: hidden;
 }
 
 .footer::before {
@@ -2626,6 +2683,10 @@ textarea.calculate__form-input {
 
   .hero-second .hero__slider {
     height: 595px;
+  }
+
+  .steps::before {
+    right: -120%;
   }
 
   .steps__list {
@@ -3146,6 +3207,10 @@ textarea.calculate__form-input {
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
     width: 100%;
+  }
+
+  .steps::before {
+    content: none;
   }
 
   .about__benifits {

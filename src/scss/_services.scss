@@ -1,5 +1,35 @@
 .services {
+  position: relative;
   margin-bottom: 132px;
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -40%;
+    bottom: 0;
+    width: 820px;
+    height: 1074px;
+    transform: rotate(-112deg);
+    background: var(--Linear, linear-gradient(98deg, #6DDCFF 0%, #7F60F9 100%));
+    opacity: 0.2;
+    filter: blur(105px);
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: -40%;
+    top: 0;
+    width: 820px;
+    height: 1074px;
+    transform: rotate(-112deg);
+    background: var(--Linear, linear-gradient(98deg, #6DDCFF 0%, #7F60F9 100%));
+    opacity: 0.2;
+    filter: blur(105px);
+    z-index: -1;
+  }
 
   .number-block {
     margin-bottom: 40px;

@@ -1,5 +1,29 @@
 .steps {
+  position: relative;
   padding-bottom: 130px;
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: -24%;
+    top: 0;
+    width: 817px;
+    height: 1074px;
+    transform: rotate(-112deg);
+    background: var(--Linear, linear-gradient(98deg, #6DDCFF 0%, #7F60F9 100%));
+    opacity: 0.2;
+    filter: blur(105px);
+    z-index: -1;
+
+    @media (max-width: $breakpoint992) {
+      right: -120%;
+    }
+
+    @media (max-width: $breakpoint768) {
+      content: none;
+    }
+  }
 
   .number-block {
     margin-bottom: 40px;
