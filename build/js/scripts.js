@@ -102,7 +102,7 @@ function heroSlider() {
     slidesPerView: 1,
     loop: true,
     autoplay: {
-      delay: 2500,
+      delay: 4500,
       disableOnInteraction: false,
     },
 
@@ -157,11 +157,17 @@ const observer = new IntersectionObserver(handleIntersection, {
 
 // Получаем все элементы с классом "number-block"
 const numberBlocks = document.querySelectorAll('.number-block');
+const calculateSection = document.querySelectorAll('.calculate');
 
 // Наблюдаем за каждым элементом
 numberBlocks.forEach(block => {
   observer.observe(block);
 });
+
+calculateSection.forEach(block => {
+  observer.observe(block);
+});
+
 
 
 

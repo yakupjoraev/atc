@@ -1,6 +1,29 @@
 // Footer
 .footer {
+  position: relative;
   padding: 70px 0 64px;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -20%;
+    width: 817px;
+    height: 1074px;
+    background: var(--Linear, linear-gradient(98deg, #6DDCFF 0%, #7F60F9 100%));
+    opacity: 0.2;
+    filter: blur(105px);
+    z-index: -1;
+
+    @media (max-width: $breakpoint992) {
+      right: -60%;
+    }
+
+    @media (max-width: $breakpoint768) {
+      right: -220%;
+    }
+  }
 
   @media (max-width: $breakpoint992) {
     padding: 60px 0;

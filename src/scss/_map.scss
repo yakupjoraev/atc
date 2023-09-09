@@ -1,7 +1,23 @@
 .map {
   position: relative;
-  overflow: hidden;
   padding-bottom: 248px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -30%;
+    top: 0;
+    width: 440px;
+    height: 1040px;
+    transform: rotate(-112deg);
+    background: var(--Linear, linear-gradient(98deg, #6DDCFF 0%, #7F60F9 100%));
+    opacity: 0.3;
+    filter: blur(105px);
+
+    @media (max-width: $breakpoint768) {
+      content: none;
+    }
+  }
 
   @media (max-width: $breakpoint992) {
     padding-bottom: 444px;

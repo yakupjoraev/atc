@@ -114,6 +114,7 @@ body {
   background-color: #0D0D0D;
   font-family: var(--main-font);
   color: var(--white-color);
+  overflow-x: hidden;
 }
 
 body.locked {
@@ -249,6 +250,26 @@ html {
 }
 
 @keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes heroSliderOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes heroSliderOpacity {
   0% {
     opacity: 0;
   }
@@ -567,6 +588,11 @@ html {
 
 .hero-second .hero__slider {
   height: 610px;
+}
+
+.hero__slide.swiper-slide-active {
+  -webkit-animation: heroSliderOpacity 2s linear;
+          animation: heroSliderOpacity 2s linear;
 }
 
 .steps {
@@ -1051,8 +1077,23 @@ html {
 
 .map {
   position: relative;
-  overflow: hidden;
   padding-bottom: 248px;
+}
+
+.map::before {
+  content: "";
+  position: absolute;
+  left: -30%;
+  top: 0;
+  width: 440px;
+  height: 1040px;
+  -webkit-transform: rotate(-112deg);
+      -ms-transform: rotate(-112deg);
+          transform: rotate(-112deg);
+  background: var(--Linear, linear-gradient(98deg, #6DDCFF 0%, #7F60F9 100%));
+  opacity: 0.3;
+  -webkit-filter: blur(105px);
+          filter: blur(105px);
 }
 
 .map .number-block {
@@ -1258,11 +1299,45 @@ html {
 }
 
 .calculate {
+  position: relative;
+  opacity: 0;
   padding: 72px 0 120px;
   background-image: url("../img/calculate-form-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20px;
+  -webkit-transition: opacity 0.4s linear;
+  -o-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear;
+}
+
+.calculate::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1062px;
+  height: 600px;
+  background: var(--Linear, linear-gradient(98deg, #6DDCFF 0%, #7F60F9 100%));
+  opacity: 0.7;
+  -webkit-filter: blur(105px);
+          filter: blur(105px);
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: opacity 1s linear 1s;
+  -o-transition: opacity 1s linear 1s;
+  transition: opacity 1s linear 1s;
+}
+
+.calculate.visible {
+  opacity: 1;
+}
+
+.calculate.visible::before {
+  opacity: 1;
 }
 
 .calculate .number-block {
@@ -1377,6 +1452,12 @@ html {
   font-weight: 400;
   line-height: normal;
   opacity: 0.2;
+}
+
+.calculate__form-input:hover,
+.calculate__form-input:active,
+.calculate__form-input:focus {
+  border-color: #6DDCFF;
 }
 
 .calculate__form-file {
@@ -2272,7 +2353,23 @@ textarea.calculate__form-input {
 }
 
 .footer {
+  position: relative;
   padding: 70px 0 64px;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  right: -20%;
+  width: 817px;
+  height: 1074px;
+  background: var(--Linear, linear-gradient(98deg, #6DDCFF 0%, #7F60F9 100%));
+  opacity: 0.2;
+  -webkit-filter: blur(105px);
+          filter: blur(105px);
+  z-index: -1;
 }
 
 .footer__logo {
@@ -2833,6 +2930,10 @@ textarea.calculate__form-input {
     margin-bottom: 90px;
   }
 
+  .footer::before {
+    right: -60%;
+  }
+
   .footer {
     padding: 60px 0;
   }
@@ -3064,6 +3165,10 @@ textarea.calculate__form-input {
     grid-column: span 2;
   }
 
+  .map::before {
+    content: none;
+  }
+
   .map__title svg {
     width: auto;
     height: 25px;
@@ -3199,6 +3304,10 @@ textarea.calculate__form-input {
   .project-preview__picture {
     max-width: 100%;
     margin: 0;
+  }
+
+  .footer::before {
+    right: -220%;
   }
 }
 

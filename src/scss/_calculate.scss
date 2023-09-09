@@ -1,9 +1,40 @@
 .calculate {
+  position: relative;
+  opacity: 0;
   padding: 72px 0 120px;
   background-image: url('../img/calculate-form-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20px;
+
+  transition: opacity 0.4s linear;
+
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1062px;
+    height: 600px;
+    background: var(--Linear, linear-gradient(98deg, #6DDCFF 0%, #7F60F9 100%));
+    opacity: 0.7;
+    filter: blur(105px);
+    z-index: -1;
+    opacity: 0;
+
+    transition: opacity 1s linear 1s;
+  }
+
+  &.visible {
+    opacity: 1;
+
+    &::before {
+      opacity: 1;
+    }
+  }
 
   @media (max-width: $breakpoint992) {
     padding: 60px 0;
@@ -117,6 +148,12 @@
       font-weight: 400;
       line-height: normal;
       opacity: 0.2;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: #6DDCFF;
     }
   }
 

@@ -244,3 +244,7 @@
     }
   }
 }
+
+.hero__slide.swiper-slide-active {
+  animation: heroSliderOpacity 2s linear;
+}
