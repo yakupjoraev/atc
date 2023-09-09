@@ -1,0 +1,149 @@
+.project-preview {
+  margin-bottom: 168px;
+
+  @media (max-width: $breakpoint992) {
+    margin-bottom: 90px;
+  }
+
+  .number-block {
+    margin-bottom: 42px;
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 16px;
+    }
+  }
+
+  // .project-preview__inner
+
+  &__inner {}
+
+  // .project-preview__title
+
+  &__title {
+    margin-bottom: 44px;
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+
+  // .project-preview__main
+
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 80px;
+    }
+  }
+
+  // .project-preview__info
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+
+    @media (max-width: $breakpoint768) {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  // .project-preview__author
+
+  &__author {
+    max-width: 165px;
+    text-align: center;
+
+    @media (max-width: $breakpoint768) {
+      margin: 0 auto;
+    }
+  }
+
+  // .project-preview__author-pic
+
+  &__author-pic {
+    width: 165px;
+    min-width: 165px;
+    height: 165px;
+    margin-bottom: 28px;
+    border-radius: 100%;
+    object-fit: cover;
+
+    @media (max-width: $breakpoint768) {
+      width: 120px;
+      min-width: 120px;
+      height: 120px;
+    }
+  }
+
+  // .project-preview__author-worked
+
+  &__author-worked {
+    margin-bottom: 10px;
+  }
+
+  // .project-preview__author-name
+
+  &__author-name {
+    margin-bottom: 10px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  // .project-preview__author-position
+
+  &__author-position {
+    color: #A1A1AA;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  // .project-preview__quotes
+
+  &__quotes {
+    max-width: 580px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  // .project-preview__link
+
+  &__link {
+    color: #A1A1AA;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
+
+  // .project-preview__picture
+
+  &__picture {
+    max-width: 530px;
+    margin-left: auto;
+
+    img {
+      max-width: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: $breakpoint768) {
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+
+
+}

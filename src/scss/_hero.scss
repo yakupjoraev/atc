@@ -226,3 +226,21 @@
     }
   }
 }
+
+.hero-second {
+  margin-bottom: 62px;
+
+
+  @media (max-width: $breakpoint992) {
+    margin-bottom: 74px;
+  }
+
+  .hero__slider {
+    height: 610px;
+
+
+    @media (max-width: $breakpoint992) {
+      height: 595px;
+    }
+  }
+}

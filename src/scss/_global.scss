@@ -54,6 +54,11 @@ html {
     font-weight: 400;
     line-height: normal;
     opacity: 0.5;
+
+
+    @media (max-width: $breakpoint768) {
+      font-size: 12px;
+    }
   }
 
   // .breadcfrumbs__link
@@ -63,6 +68,15 @@ html {
     font-size: 16px;
     font-weight: 400;
     line-height: normal;
+
+    &:hover {
+      text-decoration: underline;
+      color: #6DDCFF;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 12px;
+    }
   }
 }
 
@@ -122,7 +136,7 @@ html {
 }
 
 .main-title-shadow {
-  font-size: 60px;
+  font-size: 58px;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
