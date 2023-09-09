@@ -64,6 +64,7 @@ function revievsSlider() {
   const swiper = new Swiper(".revievs__slider", {
     slidesPerView: 1.5,
     spaceBetween: 7,
+    mousewheel: true,
     pagination: {
       el: ".revievs__slider-pagination",
     },
@@ -134,6 +135,34 @@ function gallerySlider() {
   });
 }
 gallerySlider();
+
+// Функция, которая будет вызываться при появлении элемента в поле видимости
+function handleIntersection(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Добавляем класс, когда элемент появляется в поле видимости
+      entry.target.classList.add('visible');
+      // Отключаем наблюдение для данного элемента после добавления класса (если это нужно)
+      observer.unobserve(entry.target);
+    }
+  });
+}
+
+// Создаем экземпляр IntersectionObserver
+const observer = new IntersectionObserver(handleIntersection, {
+  root: null, // Используем viewport как корневой элемент
+  rootMargin: '0px', // Можете настроить отступы, если нужно
+  threshold: 0.5, // Порог видимости (0.5 означает, что элемент будет считаться видимым, когда половина его видна)
+});
+
+// Получаем все элементы с классом "number-block"
+const numberBlocks = document.querySelectorAll('.number-block');
+
+// Наблюдаем за каждым элементом
+numberBlocks.forEach(block => {
+  observer.observe(block);
+});
+
 
 
 window.addEventListener('DOMContentLoaded', () => { // Структура страницы загружена и готова к взаимодействию

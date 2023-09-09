@@ -230,25 +230,6 @@
   }
 }
 
-.container {}
-
-.number-block {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 0 15px 0;
-  border-top: 2px solid #fff;
-  opacity: 0.2;
-
-  // .number-block__sum
-
-  &__sum {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: normal;
-    color: #FFF;
-  }
-}
 
 textarea.calculate__form-input {
   height: 110px;

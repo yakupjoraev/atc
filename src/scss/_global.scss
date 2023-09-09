@@ -38,6 +38,35 @@ html {
   min-height: 100vh;
 }
 
+
+
+.number-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0 15px 0;
+  border-top: 2px solid #fff;
+  opacity: 0.2;
+
+  max-width: 0;
+  overflow: hidden;
+  transition: 1s linear;
+
+  &.visible {
+    max-width: 100%;
+  }
+
+  // .number-block__sum
+
+  &__sum {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    color: #FFF;
+  }
+}
+
+
 .breadcfrumbs {
   display: flex;
   align-items: center;
@@ -79,6 +108,19 @@ html {
     }
   }
 }
+
+// .main-page {
+//   background-image: url('../img/main.svg');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: bottom;
+
+//   @media (max-width: $breakpoint992) {
+//     background-size: cover;
+//     background-position: center -500px;
+//   }
+
+// }
 
 
 .main__body {

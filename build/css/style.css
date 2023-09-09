@@ -125,6 +125,37 @@ html {
   min-height: 100vh;
 }
 
+.number-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 0 15px 0;
+  border-top: 2px solid #fff;
+  opacity: 0.2;
+  max-width: 0;
+  overflow: hidden;
+  -webkit-transition: 1s linear;
+  -o-transition: 1s linear;
+  transition: 1s linear;
+}
+
+.number-block.visible {
+  max-width: 100%;
+}
+
+.number-block__sum {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  color: #FFF;
+}
+
 .breadcfrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1449,28 +1480,6 @@ html {
           text-decoration-line: underline;
 }
 
-.number-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 12px 0 15px 0;
-  border-top: 2px solid #fff;
-  opacity: 0.2;
-}
-
-.number-block__sum {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: normal;
-  color: #FFF;
-}
-
 textarea.calculate__form-input {
   height: 110px;
   resize: none;
@@ -2647,6 +2656,7 @@ textarea.calculate__form-input {
 
   .map__picture {
     top: auto;
+    bottom: 0;
   }
 
   .revievs {
@@ -3195,6 +3205,10 @@ textarea.calculate__form-input {
 @media (max-width: 479.98px) {
   .container {
     max-width: none;
+  }
+
+  .map__picture {
+    bottom: auto;
   }
 }
 

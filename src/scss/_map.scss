@@ -96,6 +96,11 @@
 
     @media (max-width: $breakpoint992) {
       top: auto;
+      bottom: 0;
+    }
+
+    @media (max-width: $breakpoint480) {
+      bottom: auto;
     }
   }
 
