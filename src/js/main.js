@@ -201,4 +201,87 @@ window.addEventListener('DOMContentLoaded', () => { // Структура стр
   }
   countNums() // запускаем объявленную функцию
 
-})
+});
+
+function simpleFilter() {
+  const container = document.querySelector('.projects__filter-wrapper');
+
+  if (!container) {
+    return null
+  }
+
+  // Получите все элементы с классом "projects__filter"
+  const filterContainers = document.querySelectorAll('.projects__filter');
+
+  // Добавьте обработчик события для каждого селекта
+  filterContainers.forEach((container) => {
+    const selected = container.querySelector('.projects__selected');
+    const filterList = container.querySelector('.projects__filter-list');
+
+    // При клике на селект
+    selected.addEventListener('click', () => {
+      // Добавьте класс "active" к фильтру и переключите стрелку
+      filterList.classList.toggle('active');
+      selected.querySelector('img').classList.toggle('active');
+    });
+
+    // При выборе элемента из списка
+    filterList.addEventListener('click', (e) => {
+      if (e.target.classList.contains('projects__filter-item')) {
+        // Установите текст выбранного элемента в селекте
+        selected.querySelector('span').textContent = e.target.textContent;
+
+        // Удалите класс "active" у всех элементов списка
+        filterList.querySelectorAll('.projects__filter-item').forEach((item) => {
+          item.classList.remove('active');
+        });
+
+        // Добавьте класс "active" к выбранному элементу списка
+        e.target.classList.add('active');
+
+        // Удалите класс "active" из списка фильтра и переключите стрелку
+        filterList.classList.remove('active');
+        selected.querySelector('img').classList.remove('active');
+      }
+    });
+
+  });
+
+  // Закрыть список фильтра, если пользователь щелкает вне его
+  document.addEventListener('click', (e) => {
+    filterContainers.forEach((container) => {
+      if (!container.contains(e.target)) {
+        container.querySelector('.projects__filter-list').classList.remove('active');
+        container.querySelector('.projects__selected img').classList.remove('active');
+      }
+    });
+  });
+
+}
+simpleFilter();
+
+
+const openModalBtns = document.querySelectorAll('.open-modal-btn');
+const closeModalBtns = document.querySelectorAll('.close-modal-btn');
+const modals = document.querySelectorAll('.modal');
+
+openModalBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const modalId = btn.dataset.modalId;
+    const modal = document.getElementById(modalId);
+    modal.classList.add('show');
+  });
+});
+
+closeModalBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const modal = btn.closest('.modal');
+    modal.classList.remove('show');
+  });
+});
+
+window.addEventListener('click', (event) => {
+  if (event.target.classList.contains('modal')) {
+    event.target.classList.remove('show');
+  }
+});

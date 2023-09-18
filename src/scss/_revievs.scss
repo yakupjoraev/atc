@@ -129,4 +129,32 @@
   }
 }
 
-.container {}
+.revievs__slider-slide--opacity {
+  opacity: 0.4;
+}
+
+.revievs__static {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 14px;
+  column-gap: 14px;
+
+  @media (max-width: $breakpoint992) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $breakpoint768) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .revievs__slider-slide {
+
+    p {
+      color: #FFF;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+      opacity: 0.4;
+    }
+  }
+}

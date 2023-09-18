@@ -1,9 +1,48 @@
 <!-- Modal -->
-<div class="modal__wrapper">
-    <div class="modal">
-        <div class="modal__close"> <img src="./img/cancel.svg" alt="cancel" width="10px" height="10px"></div>
-        <div class="modal__title"><span>Заголовок 2</span> </div>
-        <div class="modal__body">
+
+<div class="modal modal-form" id="modal-form">
+  <div class="modal-content">
+    <span class="close-modal-btn">&times;</span>
+
+    <form action="#" class="modal-form__content">
+      <h2 class="modal-form__title">
+        Получить расчет
+      </h2>
+
+      <p class="modal-form__descr">
+        Оставьте ваши контактные данные и получите полный расчет стоимости
+      </p>
+
+      <div class="calculate__form-inputs">
+        <input class="calculate__form-input" type="text" placeholder="Ваше имя">
+        <input class="calculate__form-input" type="text" placeholder="+7 (999)-999-99-99">
+        <input class="calculate__form-input" type="text" placeholder="Ваш email">
+      </div>
+
+
+      <div class="calculate__form-footer">
+        <button type="button" class="calculate__form-btn">Получить консультацию</button>
+
+        <div class="calculate__form-condition">
+          Нажимая на кнопку, Вы принимаете
+          <a href="http://" target="_blank">условия обработки персональных данных</a>
         </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<button class="open-modal-btn" data-modal-id="modal-video">Open Modal 2</button>
+
+<div class="modal modal-video" id="modal-video">
+  <div class="modal-content">
+    <span class="close-modal-btn">&times;</span>
+
+    <div class="modal-video__content">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/njYFSGdcM0g?si=3eokZbghC9GM5a4Q"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
     </div>
+  </div>
 </div>

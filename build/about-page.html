@@ -19,7 +19,7 @@
       <div class="navbar">
         <div class="logo"> <a href="#"> <img src="./img/icons/logo.png" alt="logo"></a> </div>
         <ul class="menu">
-          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Products</a></li>
+          <li class="menu__item active"><a href="#" class="menu__item-link" data-scroll>Products</a></li>
           <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Features</a></li>
           <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Pricing</a></li>
           <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Support</a></li>
@@ -33,7 +33,9 @@
           </li>
 
           <li class="menu__item">
-            <a href="#" class="menu__item-link menu__item-link--btn" data-scroll>Обсудить проект </a>
+            <div class="menu__item-link menu__item-link--btn open-modal-btn" data-scroll data-modal-id="modal-form">
+              Обсудить
+              проект </div>
           </li>
         </ul>
 
@@ -67,12 +69,12 @@
         </h3>
 
         <div class="about__info-texts">
-          <p class="about__info-text">
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniamAt vero eos et accusamus et iusto odio dignissimos ducimus qui
           </p>
 
-          <p class="about__info-text">
+          <p>
             blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
             occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est
             laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
@@ -272,84 +274,80 @@
         </h3>
       </div>
 
-      <div class="revievs__slider swiper mySwiper">
-        <div class="revievs__slider-wrapper swiper-wrapper">
-          <div class="revievs__slider-slide swiper-slide">
-            <img src="./img/sber.png" alt="sber">
+      <div class="revievs__static">
+        <div class="revievs__slider-slide">
+          <img src="./img/sber.png" alt="sber">
 
-            <p class="revievs__slider-text">Переговорные</p>
-          </div>
-
-          <div class="revievs__slider-slide swiper-slide">
-            <img src="./img/sber.png" alt="sber">
-
-            <p class="revievs__slider-text">Переговорные</p>
-          </div>
-
-          <div class="revievs__slider-slide swiper-slide">
-            <img src="./img/sber.png" alt="sber">
-
-            <p class="revievs__slider-text">Переговорные</p>
-          </div>
-
-          <div class="revievs__slider-slide swiper-slide">
-            <img src="./img/sber.png" alt="sber">
-
-            <p class="revievs__slider-text">Переговорные</p>
-          </div>
-
-          <div class="revievs__slider-slide swiper-slide">
-            <img src="./img/sber.png" alt="sber">
-
-            <p class="revievs__slider-text">Переговорные</p>
-          </div>
-
-          <div class="revievs__slider-slide swiper-slide">
-            <img src="./img/sber.png" alt="sber">
-
-            <p class="revievs__slider-text">Переговорные</p>
-          </div>
-
-          <div class="revievs__slider-slide swiper-slide">
-            <img src="./img/sber.png" alt="sber">
-
-            <p class="revievs__slider-text">Переговорные</p>
-          </div>
-
-          <div class="revievs__slider-slide swiper-slide">
-            <img src="./img/sber.png" alt="sber">
-
-            <p class="revievs__slider-text">Переговорные</p>
-          </div>
-
-          <div class="revievs__slider-slide swiper-slide">
-            <img src="./img/sber.png" alt="sber">
-
-            <p class="revievs__slider-text">Переговорные</p>
-          </div>
-
-          <div class="revievs__slider-slide swiper-slide">
-            <img src="./img/sber.png" alt="sber">
-
-            <p class="revievs__slider-text">Переговорные</p>
-          </div>
-
-          <div class="revievs__slider-slide swiper-slide">
-            <img src="./img/sber.png" alt="sber">
-
-            <p class="revievs__slider-text">Переговорные</p>
-          </div>
-
-          <div class="revievs__slider-slide swiper-slide">
-            <img src="./img/sber.png" alt="sber">
-
-            <p class="revievs__slider-text">Переговорные</p>
-          </div>
+          <p>Переговорные</p>
         </div>
 
+        <div class="revievs__slider-slide">
+          <img src="./img/sber.png" alt="sber">
 
-        <div class="revievs__slider-pagination"></div>
+          <p>Переговорные</p>
+        </div>
+
+        <div class="revievs__slider-slide">
+          <img src="./img/sber.png" alt="sber">
+
+          <p>Переговорные</p>
+        </div>
+
+        <div class="revievs__slider-slide">
+          <img src="./img/sber.png" alt="sber">
+
+          <p>Переговорные</p>
+        </div>
+
+        <div class="revievs__slider-slide">
+          <img src="./img/sber.png" alt="sber">
+
+          <p>Переговорные</p>
+        </div>
+
+        <div class="revievs__slider-slide 0">
+          <img src="./img/sber.png" alt="sber">
+
+          <p>Переговорные</p>
+        </div>
+
+        <div class="revievs__slider-slide">
+          <img src="./img/sber.png" alt="sber">
+
+          <p>Переговорные</p>
+        </div>
+
+        <div class="revievs__slider-slide">
+          <img src="./img/sber.png" alt="sber">
+
+          <p>Переговорные</p>
+        </div>
+
+        <div class="revievs__slider-slide">
+          <img src="./img/sber.png" alt="sber">
+
+          <p>Переговорные</p>
+        </div>
+
+        <div class="revievs__slider-slide">
+          <img src="./img/sber.png" alt="sber">
+
+          <p>Переговорные</p>
+        </div>
+
+        <div class="revievs__slider-slide">
+          <img src="./img/sber.png" alt="sber">
+
+          <p>Переговорные</p>
+        </div>
+
+        <div class="revievs__slider-slide revievs__slider-slide--opacity">
+          <img src="./img/sber.png" alt="sber">
+
+          <p>Переговорные</p>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -450,6 +448,54 @@
     </div>
   </div>
 </section>
+    <!-- Modal -->
+
+<div class="modal modal-form" id="modal-form">
+  <div class="modal-content">
+    <span class="close-modal-btn">&times;</span>
+
+    <form action="#" class="modal-form__content">
+      <h2 class="modal-form__title">
+        Получить расчет
+      </h2>
+
+      <p class="modal-form__descr">
+        Оставьте ваши контактные данные и получите полный расчет стоимости
+      </p>
+
+      <div class="calculate__form-inputs">
+        <input class="calculate__form-input" type="text" placeholder="Ваше имя">
+        <input class="calculate__form-input" type="text" placeholder="+7 (999)-999-99-99">
+        <input class="calculate__form-input" type="text" placeholder="Ваш email">
+      </div>
+
+
+      <div class="calculate__form-footer">
+        <button type="button" class="calculate__form-btn">Получить консультацию</button>
+
+        <div class="calculate__form-condition">
+          Нажимая на кнопку, Вы принимаете
+          <a href="http://" target="_blank">условия обработки персональных данных</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<button class="open-modal-btn" data-modal-id="modal-video">Open Modal 2</button>
+
+<div class="modal modal-video" id="modal-video">
+  <div class="modal-content">
+    <span class="close-modal-btn">&times;</span>
+
+    <div class="modal-video__content">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/njYFSGdcM0g?si=3eokZbghC9GM5a4Q"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
   </main>
 
   <!-- Footer -->

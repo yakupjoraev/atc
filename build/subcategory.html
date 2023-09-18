@@ -19,7 +19,7 @@
       <div class="navbar">
         <div class="logo"> <a href="#"> <img src="./img/icons/logo.png" alt="logo"></a> </div>
         <ul class="menu">
-          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Products</a></li>
+          <li class="menu__item active"><a href="#" class="menu__item-link" data-scroll>Products</a></li>
           <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Features</a></li>
           <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Pricing</a></li>
           <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Support</a></li>
@@ -33,7 +33,9 @@
           </li>
 
           <li class="menu__item">
-            <a href="#" class="menu__item-link menu__item-link--btn" data-scroll>Обсудить проект </a>
+            <div class="menu__item-link menu__item-link--btn open-modal-btn" data-scroll data-modal-id="modal-form">
+              Обсудить
+              проект </div>
           </li>
         </ul>
 
@@ -76,15 +78,15 @@
             CОЗДАНИЕ И ОСНАЩЕНИЕ<br> СИТУАЦИОННОГО ЦЕНТРА
           </h1>
 
-          <p class="project__bottom-descr">
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore
             magna aliqua. Ut enim ad minim veniam
           </p>
 
           <div class="project__tags">
-            <div class="project__tag">оснащение </div>
-            <div class="project__tag">о решении</div>
+            <a href="#">оснащение </a>
+            <a href="#">о решении</a>
           </div>
         </div>
       </div>
@@ -301,14 +303,14 @@
 
       <div class="complecs__main">
         <div class="complecs__texts">
-          <p class="complecs__text">
+          <p>
             Как правило, ситуационный центр в современном исполнении представляет собой программно-мультимедийный
             комплекс, в состав которого входят отображающие поверхности (масштабные видеостены, LCD-панели и т.д.),
             множество рабочих станций операторов, мощный сервер для хранения необходимого для работы ситуационного
             центра программного обеспечения, концентрации оперативных данных, аналитические инструменты.
           </p>
 
-          <p class="complecs__text">
+          <p>
             Сюда же относятся средства передачи данных, коммутация и средства управления узлами СЦ от видеокамер на
             отслеживаемых участках до выгрузки отчетов для конечного адресата данных. Одним словом, ситуационный центр
             представляет собой классический комплексный мультимедиапроект, состоящий из нескольких основных
@@ -355,73 +357,73 @@
           <div class="revievs__slider-slide swiper-slide">
             <img src="./img/sber.png" alt="sber">
 
-            <p class="revievs__slider-text">Переговорные</p>
+            <p>Переговорные</p>
           </div>
 
           <div class="revievs__slider-slide swiper-slide">
             <img src="./img/sber.png" alt="sber">
 
-            <p class="revievs__slider-text">Переговорные</p>
+            <p>Переговорные</p>
           </div>
 
           <div class="revievs__slider-slide swiper-slide">
             <img src="./img/sber.png" alt="sber">
 
-            <p class="revievs__slider-text">Переговорные</p>
+            <p>Переговорные</p>
           </div>
 
           <div class="revievs__slider-slide swiper-slide">
             <img src="./img/sber.png" alt="sber">
 
-            <p class="revievs__slider-text">Переговорные</p>
+            <p>Переговорные</p>
           </div>
 
           <div class="revievs__slider-slide swiper-slide">
             <img src="./img/sber.png" alt="sber">
 
-            <p class="revievs__slider-text">Переговорные</p>
+            <p>Переговорные</p>
           </div>
 
           <div class="revievs__slider-slide swiper-slide">
             <img src="./img/sber.png" alt="sber">
 
-            <p class="revievs__slider-text">Переговорные</p>
+            <p>Переговорные</p>
           </div>
 
           <div class="revievs__slider-slide swiper-slide">
             <img src="./img/sber.png" alt="sber">
 
-            <p class="revievs__slider-text">Переговорные</p>
+            <p>Переговорные</p>
           </div>
 
           <div class="revievs__slider-slide swiper-slide">
             <img src="./img/sber.png" alt="sber">
 
-            <p class="revievs__slider-text">Переговорные</p>
+            <p>Переговорные</p>
           </div>
 
           <div class="revievs__slider-slide swiper-slide">
             <img src="./img/sber.png" alt="sber">
 
-            <p class="revievs__slider-text">Переговорные</p>
+            <p>Переговорные</p>
           </div>
 
           <div class="revievs__slider-slide swiper-slide">
             <img src="./img/sber.png" alt="sber">
 
-            <p class="revievs__slider-text">Переговорные</p>
+            <p>Переговорные</p>
           </div>
 
           <div class="revievs__slider-slide swiper-slide">
             <img src="./img/sber.png" alt="sber">
 
-            <p class="revievs__slider-text">Переговорные</p>
+            <p>Переговорные</p>
           </div>
 
           <div class="revievs__slider-slide swiper-slide">
             <img src="./img/sber.png" alt="sber">
 
-            <p class="revievs__slider-text">Переговорные</p>
+            <p>Переговорные</p>
           </div>
         </div>
 
@@ -693,6 +695,54 @@
     </div>
   </div>
 </section>
+    <!-- Modal -->
+
+<div class="modal modal-form" id="modal-form">
+  <div class="modal-content">
+    <span class="close-modal-btn">&times;</span>
+
+    <form action="#" class="modal-form__content">
+      <h2 class="modal-form__title">
+        Получить расчет
+      </h2>
+
+      <p class="modal-form__descr">
+        Оставьте ваши контактные данные и получите полный расчет стоимости
+      </p>
+
+      <div class="calculate__form-inputs">
+        <input class="calculate__form-input" type="text" placeholder="Ваше имя">
+        <input class="calculate__form-input" type="text" placeholder="+7 (999)-999-99-99">
+        <input class="calculate__form-input" type="text" placeholder="Ваш email">
+      </div>
+
+
+      <div class="calculate__form-footer">
+        <button type="button" class="calculate__form-btn">Получить консультацию</button>
+
+        <div class="calculate__form-condition">
+          Нажимая на кнопку, Вы принимаете
+          <a href="http://" target="_blank">условия обработки персональных данных</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<button class="open-modal-btn" data-modal-id="modal-video">Open Modal 2</button>
+
+<div class="modal modal-video" id="modal-video">
+  <div class="modal-content">
+    <span class="close-modal-btn">&times;</span>
+
+    <div class="modal-video__content">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/njYFSGdcM0g?si=3eokZbghC9GM5a4Q"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
   </main>
 
   <!-- Footer -->

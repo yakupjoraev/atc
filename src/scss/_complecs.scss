@@ -39,19 +39,18 @@
     column-gap: 50px;
     row-gap: 30px;
 
+    p {
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: normal;
+      opacity: 0.5;
+    }
+
     @media (max-width: $breakpoint992) {
       grid-template-columns: repeat(1, 1fr);
       row-gap: 16px;
     }
   }
 
-  // .complecs__text
-
-  &__text {
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
-    opacity: 0.5;
-  }
 }

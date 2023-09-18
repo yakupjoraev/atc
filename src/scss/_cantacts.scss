@@ -181,24 +181,34 @@
 
   &__bottom-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 60px;
+    align-content: baseline;
     row-gap: 16px;
     width: fit-content;
 
-    @media (max-width: $breakpoint768) {
-      grid-template-columns: repeat(1, 1fr);
+    p {
+      max-width: 310px;
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: normal;
+      opacity: 0.5;
     }
   }
 
   // .cantacts__bottom-item
 
-  &__bottom-item {
-    max-width: 310px;
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
-    opacity: 0.5;
+  &__bottom-item {}
+}
+
+.cantacts__bottom-lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 60px;
+  row-gap: 16px;
+  align-content: baseline;
+  width: fit-content;
+
+  @media (max-width: $breakpoint768) {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
