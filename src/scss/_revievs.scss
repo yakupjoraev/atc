@@ -108,23 +108,34 @@
     background: rgba(217, 217, 217, 0.20);
     backdrop-filter: blur(5px);
 
+
     .swiper-pagination-bullet {
       flex: 1 1 auto;
       margin: 0 !important;
       border-radius: 60px;
-      background: rgba(164, 164, 164, 0.20);
+      background: rgba(217, 217, 217, 0.20);
       backdrop-filter: blur(5px);
       height: 2px;
       opacity: 1;
+
+      &+.swiper-pagination-bullet-active {
+        margin-left: 7px !important;
+      }
     }
 
     .swiper-pagination-bullet-active {
       flex: 1 1 auto;
-      margin: 0 7px !important;
+      // margin: 0 7px 0 0 !important;
       border-radius: 60px;
       background: linear-gradient(97deg, #6DDCFF -89.03%, #7F60F9 230.94%);
       backdrop-filter: blur(5px);
       opacity: 1;
+      animation: fade 0.5s linear;
+
+
+      &+.swiper-pagination-bullet {
+        margin-left: 7px !important;
+      }
     }
   }
 }

@@ -1,3 +1,7 @@
+.calculate+.services {
+  margin-top: 132px;
+}
+
 .services {
   position: relative;
   margin-bottom: 132px;
@@ -78,6 +82,13 @@
 
   &__item {
     min-height: max-content;
+
+    &:hover {
+
+      .services__item-arrow {
+        transform: rotate(45deg);
+      }
+    }
   }
 
   &__item--more {
@@ -132,6 +143,10 @@
       .services__item-pic {
         filter: grayscale(0);
       }
+
+      .services__item-arrow {
+        transform: rotate(45deg);
+      }
     }
   }
 
@@ -170,7 +185,13 @@
 
   // .services__item-arrow
 
-  &__item-arrow {}
+  &__item-arrow {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+
+    transition: transform 0.2s linear;
+  }
 
   // .services__item-more
 

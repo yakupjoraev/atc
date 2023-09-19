@@ -156,6 +156,10 @@
         opacity: 0;
       }
 
+      .projects__item-more-default img {
+        transform: rotate(45deg);
+      }
+
       .projects__item-more-hover {
         opacity: 1;
       }
@@ -229,13 +233,21 @@
 
     opacity: 1;
     transition: opacity 0.2s linear;
+
+    img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+
+      transition: transform 0.2s linear;
+    }
   }
 
   // .projects__item-more-hover
 
   &__item-more-hover {
     position: absolute;
-    right: 0;
+    right: 5px;
     top: 5px;
     background: linear-gradient(98deg, #6DDCFF 0%, #7F60F9 142.2%);
     background-clip: text;
@@ -247,7 +259,7 @@
     column-gap: 10px;
 
     opacity: 0;
-    transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear 0.1s;
   }
 }
 

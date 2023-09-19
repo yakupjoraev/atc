@@ -75,7 +75,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 250px;
+    min-height: 250px;
     border-radius: 10px;
 
     @media (max-width: $breakpoint992) {

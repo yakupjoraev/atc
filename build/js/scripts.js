@@ -262,6 +262,31 @@ function simpleFilter() {
 simpleFilter();
 
 
+function simpleParallax() {
+  const container = document.querySelector('.calculate');
+
+  if (!container) {
+    return null
+  }
+
+  (function () {
+    var indexOf = [].indexOf;
+
+    if (indexOf.call(window, 'ontouchstart') === -1) {
+      document.body.addEventListener('mousemove', function (e) {
+        var moveX, moveY;
+        moveX = e.pageX * -1 / 200 + 'px';
+        moveY = e.pageY * -1 / 1000 + 'px';
+        document.querySelector('.calculate').style.backgroundPosition = 'calc(50% + ' + moveX + ') calc(50% + ' + moveY + ')';
+      });
+    }
+
+  })();
+
+}
+
+simpleParallax();
+
 const openModalBtns = document.querySelectorAll('.open-modal-btn');
 const closeModalBtns = document.querySelectorAll('.close-modal-btn');
 const modals = document.querySelectorAll('.modal');

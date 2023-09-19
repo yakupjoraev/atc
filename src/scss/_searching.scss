@@ -53,6 +53,7 @@
     justify-content: space-around;
     min-width: 100%;
 
+    text-transform: uppercase;
     font-size: 120px;
     font-weight: 700;
     line-height: normal;
@@ -94,7 +95,20 @@
 .reverse {}
 
 .marquee {
-  animation: scroll 100s linear infinite;
+  animation: scroll 140s linear infinite;
+}
+
+.marquee:nth-child(1) {
+  animation: scroll 140s linear infinite;
+}
+
+.marquee:nth-child(2) {
+  animation: scroll 200s linear infinite;
+  animation-direction: reverse;
+}
+
+.marquee:nth-child(3) {
+  animation: scroll 300s linear infinite;
 }
 
 .reverse {
