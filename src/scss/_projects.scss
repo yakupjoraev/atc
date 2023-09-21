@@ -94,6 +94,7 @@
     line-height: 22px;
 
     img {
+      width: 21px;
       transition: transform 0.2s linear;
     }
 
@@ -283,19 +284,19 @@
   top: 105%;
   left: 0;
   width: 100%;
-  text-align: center;
 
   display: flex;
   flex-direction: column;
   row-gap: 5px;
   padding: 10px;
+  padding-left: 16px;
   cursor: pointer;
   color: #fff;
   font-size: 14px;
   font-weight: 500;
   line-height: 22px;
 
-  border-radius: 25px;
+  border-radius: 5px;
   border: 2px solid #303737;
   background: #0d0d0d;
   z-index: 2;

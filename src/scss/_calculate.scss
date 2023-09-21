@@ -241,12 +241,18 @@
     border-radius: 7px;
     background: linear-gradient(94deg, #6DDCFF -74.85%, #7F60F9 197.71%);
 
+    font-family: var(--main-font);
     white-space: nowrap;
     color: #FFF;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
     line-height: normal;
+
+
+    &:hover {
+      background: linear-gradient(94deg, #6DDCFF -14.85%, #7F60F9 87.71%);
+    }
 
     @media (max-width: $breakpoint768) {
       width: 100%;

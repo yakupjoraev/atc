@@ -117,6 +117,10 @@
     line-height: 22px;
     text-transform: uppercase;
 
+    &:hover {
+      background: linear-gradient(94deg, #6DDCFF -14.85%, #7F60F9 87.71%);
+    }
+
     @media (max-width: $breakpoint768) {
       flex: 0 1 auto;
       width: 100%;
@@ -128,7 +132,7 @@
   &__slide-search-group {
     position: relative;
     height: 60px;
-    width: 340px;
+    width: 370px;
 
     img {
       position: absolute;
@@ -146,7 +150,7 @@
   // .hero__slide-search
 
   &__slide-search {
-    width: 340px;
+    width: 370px;
     padding: 17px 16px 17px 48px;
     border-radius: 60px;
     border: 2px solid #303737;
@@ -158,6 +162,14 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
+
+    &::placeholder {
+      font-family: var(--main-font);
+      font-weight: 400;
+      line-height: 22px;
+      font-size: 14px;
+      color: #71717A;
+    }
 
 
     @media (max-width: $breakpoint992) {
@@ -283,5 +295,5 @@
 }
 
 .hero__slide.swiper-slide-active {
-  animation: heroSliderOpacity 2s linear;
+  animation: heroSliderOpacity 3s linear;
 }

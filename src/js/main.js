@@ -101,7 +101,7 @@ function heroSlider() {
     slidesPerView: 1,
     loop: true,
     autoplay: {
-      delay: 4500,
+      delay: 5500,
       disableOnInteraction: false,
     },
 
@@ -285,6 +285,22 @@ function simpleParallax() {
 }
 
 simpleParallax();
+
+//плавный скролл
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+
+    const blockID = anchor.getAttribute('href').substr(1)
+
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+};
 
 const openModalBtns = document.querySelectorAll('.open-modal-btn');
 const closeModalBtns = document.querySelectorAll('.close-modal-btn');

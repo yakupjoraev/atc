@@ -51,7 +51,7 @@ html {
 
   max-width: 0;
   overflow: hidden;
-  transition: 1s ease-out;
+  transition: 1s cubic-bezier(0, .32, .59, .46);
 
   &.visible {
     max-width: 100%;
@@ -187,7 +187,7 @@ html {
 
   -webkit-text-stroke: 2px 848484;
   text-shadow:
-    2px 2px 0 #848484,
+    1px 1px 0 #848484,
     -1px -1px 0 #848484,
     1px -1px 0 #848484,
     -1px 1px 0 #848484,
