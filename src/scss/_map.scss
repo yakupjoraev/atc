@@ -44,6 +44,20 @@
     max-width: 636px;
 
     z-index: 2;
+
+
+    .main-title-gradient {
+      background: var(--Linear, linear-gradient(98deg, #6DDCFF 0%, #7F60F9 100%));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Gilroy;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+    }
   }
 
   // .map__title

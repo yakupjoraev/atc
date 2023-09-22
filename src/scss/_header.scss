@@ -255,21 +255,31 @@
   }
 }
 
+// .header--second {
+
+//   .navbar {
+//     position: static;
+//     margin-bottom: 180px;
+//     margin-top: 40px;
+//     transform: translateX(0);
+
+//     @media (max-width: 1250px) {
+//       width: 100%;
+//     }
+
+//     @media (max-width: $breakpoint992) {
+//       margin-bottom: 90px;
+//       margin-top: 0;
+//     }
+//   }
+// }
+
 .header--second {
+  height: 112px;
+  margin-bottom: 180px;
 
-  .navbar {
-    position: static;
-    margin-bottom: 180px;
-    margin-top: 40px;
-    transform: translateX(0);
-
-    @media (max-width: 1250px) {
-      width: 100%;
-    }
-
-    @media (max-width: $breakpoint992) {
-      margin-bottom: 90px;
-      margin-top: 0;
-    }
+  @media (max-width: $breakpoint992) {
+    height: 50px;
+    margin-bottom: 60px;
   }
 }

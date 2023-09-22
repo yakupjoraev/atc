@@ -30,7 +30,7 @@
 
 :root {
   --main-font: "Gilroy", sans-serif;
-  --second-font: "Inter", sans-serif;
+  --second-font: "Gilroy", sans-serif;
   --white-color: #ffffff;
   --grey-color: #888888;
 }
@@ -390,13 +390,9 @@ html {
   cursor: pointer;
 }
 
-.header--second .navbar {
-  position: static;
+.header--second {
+  height: 112px;
   margin-bottom: 180px;
-  margin-top: 40px;
-  -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);
 }
 
 .hero {
@@ -1288,6 +1284,19 @@ html {
   position: relative;
   max-width: 636px;
   z-index: 2;
+}
+
+.map__info .main-title-gradient {
+  background: var(--Linear, linear-gradient(98deg, #6DDCFF 0%, #7F60F9 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Gilroy;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .map__title {
@@ -3133,10 +3142,6 @@ textarea.calculate__form-input {
   .navbar {
     width: 98%;
   }
-
-  .header--second .navbar {
-    width: 100%;
-  }
 }
 
 @media (max-width: 991.98px) {
@@ -3164,9 +3169,9 @@ textarea.calculate__form-input {
     margin-left: 0;
   }
 
-  .header--second .navbar {
-    margin-bottom: 90px;
-    margin-top: 0;
+  .header--second {
+    height: 50px;
+    margin-bottom: 60px;
   }
 
   .hero {
