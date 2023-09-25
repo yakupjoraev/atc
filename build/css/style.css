@@ -1378,6 +1378,37 @@ html {
   max-width: 100%;
 }
 
+.map__title div {
+  display: inline;
+}
+
+.main-title-gradient--one {
+  display: inline;
+  background: -o-linear-gradient(352deg, #76A2FC 0%, #7B7DFA 100%), -o-linear-gradient(352deg, #6DDCFF 0%, #76A0FC 100%);
+  background: linear-gradient(98deg, #76A2FC 0%, #7B7DFA 100%), linear-gradient(98deg, #6DDCFF 0%, #76A0FC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.main-title-gradient--two {
+  background: -o-linear-gradient(352deg, #6DDCFF 0%, #76A0FC 100%), -o-linear-gradient(352deg, #6DDCFF 0%, #76A0FC 100%);
+  background: linear-gradient(98deg, #6DDCFF 0%, #76A0FC 100%), linear-gradient(98deg, #6DDCFF 0%, #76A0FC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
 .revievs {
   margin-bottom: 164px;
   overflow: hidden;
@@ -3334,6 +3365,14 @@ textarea.calculate__form-input {
     bottom: 0;
   }
 
+  .main-title-gradient--one {
+    font-size: 46px;
+  }
+
+  .main-title-gradient--two {
+    font-size: 46px;
+  }
+
   .revievs {
     margin-bottom: 88px;
   }
@@ -3783,6 +3822,14 @@ textarea.calculate__form-input {
     height: 25px;
   }
 
+  .main-title-gradient--one {
+    font-size: 36px;
+  }
+
+  .main-title-gradient--two {
+    font-size: 36px;
+  }
+
   .revievs .number-block {
     margin-bottom: 34px;
   }
@@ -3990,6 +4037,14 @@ textarea.calculate__form-input {
   }
 
   .main-title-shadow {
+    font-size: 30px;
+  }
+
+  .main-title-gradient--one {
+    font-size: 30px;
+  }
+
+  .main-title-gradient--two {
     font-size: 30px;
   }
 
