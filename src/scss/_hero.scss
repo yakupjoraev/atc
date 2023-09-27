@@ -9,6 +9,7 @@
 
   &__slider {
     height: 1010px;
+    overflow: visible;
 
     @media (max-width: $breakpoint992) {
       height: 870px;
