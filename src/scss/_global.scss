@@ -235,6 +235,44 @@ html {
   z-index: 2;
 }
 
+.simplesearch-results {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+      color: #6DDCFF;
+    }
+  }
+}
+
+.simplesearch-results-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.simplesearch-result {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+      color: #6DDCFF;
+    }
+  }
+}
+
 
 // Animations
 // Fade
