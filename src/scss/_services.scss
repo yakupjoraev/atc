@@ -173,6 +173,10 @@
         min-height: 417px;
       }
     }
+
+    @media (max-width: $breakpoint992) {
+      filter: grayscale(0);
+    }
   }
 
   // .services__item-footer
@@ -191,6 +195,10 @@
     object-fit: cover;
 
     transition: transform 0.2s linear;
+
+    @media (max-width: $breakpoint992) {
+      transform: rotate(45deg);
+    }
   }
 
   // .services__item-more

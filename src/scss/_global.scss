@@ -207,6 +207,9 @@ html {
 }
 
 .site-search-results {
+
+
+
   -webkit-transition: max-height .2s linear, opacity .2s linear;
   -o-transition: max-height .2s linear, opacity .2s linear;
   transition: max-height .2s linear, opacity .2s linear;
@@ -214,9 +217,9 @@ html {
   top: 105%;
   left: 0;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  // display: -webkit-box;
+  // display: -ms-flexbox;
+  // display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;

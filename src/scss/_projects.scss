@@ -169,6 +169,12 @@
         filter: grayscale(0);
       }
     }
+
+    @media (max-width: $breakpoint992) {
+      &>img {
+        filter: grayscale(0);
+      }
+    }
   }
 
   // .projects__item-footer
@@ -241,6 +247,14 @@
       object-fit: cover;
 
       transition: transform 0.2s linear;
+
+      @media (max-width: $breakpoint992) {
+        transform: rotate(45deg);
+      }
+    }
+
+    @media (max-width: $breakpoint992) {
+      opacity: 0;
     }
   }
 
@@ -261,6 +275,10 @@
 
     opacity: 0;
     transition: opacity 0.2s linear 0.1s;
+
+    @media (max-width: $breakpoint992) {
+      opacity: 1;
+    }
   }
 }
 
